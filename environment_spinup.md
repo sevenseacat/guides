@@ -71,13 +71,15 @@ If you don't want to do this you will need to install the dependencies anyway be
 
 ```
 # For MRI ruby
-sudo apt-get install build-essential zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev libncurses5-dev libffi-dev
+sudo apt-get install build-essential zlib1g-dev libyaml-dev \
+libssl-dev libgdbm-dev libreadline-dev libncurses5-dev libffi-dev
 
 # For jruby
 sudo apt-get install openjdk-7-jdk
 
 # For rubinius
-sudo apt-get install gcc g++ automake flex bison ruby-dev rake zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev libncurses5-dev
+sudo apt-get install gcc g++ automake flex bison ruby-dev rake \
+zlib1g-dev libyaml-dev libssl-dev libgdbm-dev libreadline-dev libncurses5-dev
 ```
 
 Once the right dependencies are installed for the version of ruby you want to install, you can move onto setting up `ruby-build`.
