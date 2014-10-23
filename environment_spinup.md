@@ -175,7 +175,7 @@ sudo apt-get install libsqlite3-dev
 sudo yum install -y sqlite-devel
 ```
 
-> If you wanted to use a different database instead (eg. PostgreSQL or MySQL) you would install the development libraries for those databases instead (`libpq-dev` or `libmysqlclient-dev`) and then generate your rails app with either `-d postgresql` or `-d mysql` to generate default database configs for those databases. But for beginning, sqlite is sufficient.
+> If you wanted to use a different database instead (eg. PostgreSQL or MySQL) you would install the development libraries for those databases instead (`libpq-dev`/`libmysqlclient-dev` for Ubuntu, or `postgresql-devel`/`mariadb-devel` for Fedora), presuming you already have the relevant DB server up and running. You can then generate your rails app with either `-d postgresql` or `-d mysql` to generate default database configs for those databases. But for beginning, sqlite is sufficient.
 
 And then re-run the `rails new` command. Overwrite files where necessary. Now you have a Rails app!
 
@@ -191,7 +191,7 @@ To cut a long story short, way back in Rails 3.1 they introduced a new feature c
 
 The error message will give you a URL to visit to see a list of possible runtimes, you need to install one of them. The one I always pick is node.js - it's easy to install (`sudo apt-get install nodejs` or `sudo yum install -y nodejs`) and you only need to do it once, ever. 
 
-Alternatively, if you don't want to install a package and instead want a pure Ruby solution, you can use the gem `therubyracer`. You can put it in your Gemfile like `gem 'therubyracer'`, and then `bundle install` to get it installed.
+> Alternatively, if you don't want to install a package and instead want a pure Ruby solution, you can use the gem `therubyracer`. You can put it in your Gemfile like `gem 'therubyracer'`, and then `bundle install` to get it installed.
 
 So pick your favorite solution, and install it. Once you have one, you can re-run `rails server`.
 
