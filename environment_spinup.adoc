@@ -1,4 +1,6 @@
 = The Super-Simple Rails Environment Setup
+:icons: font
+:toc: left
 
 The quickest and simplest way to get a Rails setup going, on a fresh Linux install.
 
